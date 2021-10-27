@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+   
+</head>
+<body>
+    <h1>회원가입</h1>
+   
+    <fieldset>
+
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <td><input type="text" placeholder="아이디 10 글자 이내" size="30px"></td>
+                <td><button type="button">중복확인</button></td>
+            </tr>
+            <tr>
+                <th>비밀번호</th>
+                <td colspan="2"><input type="password" name="pwd" id="pwd" placeholder="영문,숫자,특수문자 포함 8 자 이상" size="30px"></td>
+            </tr>
+            <tr>
+                <th>비밀번호 확인</th>
+                <td colspan="2"><input type="password" name="pwd2" id="pwd2" size="30px"></td>                
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td ></td>
+                <td></td>
+            </tr>
+        </table>
+        <legend>필수 입력 사항</legend>
+
+        <label for="textIn"><b>ID</b></label>
+        <input type="text" name="textIn" id="textIn" placeholder="아이디 10글자 이내">
+        <button>중복 확인</button>
+        <br>
+        <label for="pwdIn">비밀번호</label>
+        <input type="password" name="pwdIn" id="pwdIn" placeholder="영문,숫자,특수문자 포함 8자 이상">
+        <br>
+        <label for="pwdIn2">비밀번호 확인</label>
+        <input type="password" name="pwdIn2" id="pwdIn2">
+        <br>
+        <label for="emailIn"><b>Email</b></label>
+        <input type="email" name="emailIn" id="emailIn">
+        <select name="searchEn" id="searchEn">
+            <option value="">직접입력</option>
+            <option value="naver.com">네이버</option>
+            <option value="google.com">구글</option>
+            <option value="daum.net">다음</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>추가 정보</legend>
+
+        <label for="file">프로필 사진 : </label>
+        <input type="file" name="uploadfile" id="file">
+        <br><br>
+        <label>성별 : </label>
+        <label><input type="radio" name="gender" value="M">남자</label>
+        <label><input type="radio" name="gender" value="W">여자</label>
+        <br><br>
+        <label>
+            생년월일 : <input type="date">
+        </label>
+        <br><br>
+        <label>취미</label><br>
+        <label><input type="checkbox" name="" id="">야구</label>
+        <label><input type="checkbox" name="" id="">농구</label>
+        <label><input type="checkbox" name="" id="">축구</label><br>
+        <label><input type="checkbox" name="" id="">공부</label>
+        <label><input type="checkbox" name="" id="">음악감상</label><br>
+        <label><input type="checkbox" name="" id="">기타 :</label>       
+        <input type="text">
+        <br><br>
+        <label for="">자기소개</label><br>
+        <textarea name="" id="" cols="50" rows="5"></textarea>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="회원가입">
+    <input type="reset" value="다시입력">
+    <button>이전으로</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+</body>
+</html>
