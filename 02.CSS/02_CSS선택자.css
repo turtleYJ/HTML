@@ -1,0 +1,98 @@
+/* * {
+    color: green;
+} */
+/* 기본 속성 선택자 테스트 */
+/* div 중 name 속성값이 name1과 일치하는 태그 */
+div[name="name1"] {
+    background-color: orangered;
+}
+
+/* div 중 name 속성 안에 name1이 포함되어 있는 태그(속성값이 띄어쓰기로 구분된) */
+div[name~="name1"] {
+    background-color: orangered;
+}
+
+/* div 중 class 속성에서 class로 시작되는 태그 (-) */
+div[class|="class"] {
+    background-color: aqua;
+}
+
+/* div 중 name 속성이 name로 시작되는 태그 */
+div[name^="name"] {
+    background-color: blue;
+}
+
+/* div 중 class 속성이 class로 끝나는 경우 */
+div[class$="class"] {
+    color: white;
+}
+/* div 중 class 속성 중에 i를 포함하는 태그 */
+div[class*=i] {
+    background-color: yellowgreen;
+    color: red;
+}
+
+/* 클래스가 div-class인 것 중 name 속성값에 name3이 포함되어 있는 경우(속성값이 띄어쓰기로 구분된) */
+.div-class[name~="name3"] {
+    background-color: hotpink;
+}
+/* --------------------------------------------- */
+
+/* 자손 선택자와 후손 선택자 테스트 */
+#test1>h4 {
+    background-color: orange;
+}
+
+#test1>ul>li{
+    background-color: coral;
+}
+
+/* ------------------------------------ */
+/* 동위 선택자 테스트 */
+#div-test {
+    background-color: red;
+}
+
+#div-test+div{
+    background-color: royalblue;
+}
+
+/* #div-test~div{
+    background-color: seagreen;
+} */
+
+#active-test, #hover-test {
+    background-color: springgreen;
+    width: 300px;
+    height: 300px;
+}
+
+#active-test:active {
+    background-color: yellow;
+    color: blue;
+}
+
+#hover-test:hover {
+    background-color: steelblue;
+    color: orange;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------ */
+/* 상태 선택자 테스트 */
+input[type=checkbox]:checked {
+    width: 20px;
+    height: 20px;
+}
+
+input[type=checkbox]:checked+label {
+    font-size: 20px;
+}
+#userId:focus, #userPwd:focus {
+    background-color: wheat;
+    border: 2px solid red;
+}
+
+option:dia {
+    background-color: violet;
+}
